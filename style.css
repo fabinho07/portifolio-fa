@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header .logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header .menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+header .menu-line {
+  height: 3px;
+  background-color: #333;
+}
+
+/* section-container */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container .leftside {
+  background-color: #385760;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.container .rightside {
+  background-color: #fff;
+  flex: 1;
+  background-image: url('imagens/hero.jpg');
+  background-position: center top;
+  background-size: cover;
+}
+
+.container .info {
+  color: #fff;
+}
+
+.container .profession {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.container .name {
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.container .buttons a {
+   background-color: #fff;
+   display: inline-block;
+   color: #385760;
+   padding: 20px 40px;
+   font-size: 16px;
+   text-transform: uppercase;
+   font-weight: bold;
+   box-shadow: 0px 0px 10px #111;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+
+.buttons a.light {
+  color: #fff;
+  background-color: #385760;
+}
+
+.container .buttons a:hover {
+  opacity: 0.8;
+}
+
+
+/* footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* responsividade */
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .leftside {
+    flex: none;
+    padding: 30px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header {
+    position: initial;
+    background-color: #385760;
+  }
+
+  header .menu-line {
+    background-color: #fff;
+  }
+
+  footer {
+    position: initial;
+    color: #333;
+    font-size: 16px;
+  }
+
+  footer a {
+    color: #333;
+  }
+
+}
+
+@media (max-width: 450px) {
+    .container .leftside .info .name {
+    font-size: 40px;
+  }
+
+  .container .leftside .info .buttons  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+   
+
+
+
